@@ -30,8 +30,12 @@ public class HelperBase {
         }
     }
 
-    public void login(){
+public boolean isElementPresent(By locator){
+        return wd.findElements(locator).size()>0;
+}
 
-    }
+public String  getText(By locator){
+        return wd.findElement(locator).getText();
+}
 
     }
