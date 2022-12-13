@@ -58,6 +58,7 @@ public class LoginTests extends TestBase {
         app.user().submitLogin();
         Assert.assertFalse(app.user().isLogged());
         Assert.assertTrue(app.user().getTextErrorPassword().contains("Incorrect email address and / or password."));
+        app.user().returnToHome();
 
 
     }

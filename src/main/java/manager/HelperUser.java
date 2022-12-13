@@ -12,6 +12,8 @@ public class HelperUser extends HelperBase{
     }
 
     public void initLogin() {
+        pause(2000);
+        if(isHomePage())
         click(By.cssSelector("a[href='/login']"));
     }
 
@@ -30,7 +32,13 @@ public class HelperUser extends HelperBase{
     }
 
     private void fillEmail(String email) {
-        type(By.name("user"),email);
+        if(wd.findElement(By.cssSelector("button.username-change")).isDisplayed()){
+            click(By.cssSelector("button.username-change"));
+            type(By.name("user"),email);
+        }else {
+            type(By.name("user"),email);
+        }
+
         click(By.id("login"));
     }
 
