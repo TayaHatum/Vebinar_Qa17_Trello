@@ -1,11 +1,12 @@
 package manager;
 
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import com.google.common.io.Files;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.io.File;
+import java.io.IOException;
 
 public class HelperBase {
     WebDriver wd;
@@ -62,4 +63,18 @@ public void alertShow(){
     Alert alert1 = new WebDriverWait(wd, 5)
             .until(ExpectedConditions.alertIsPresent());
 }
+
+
+
+    public void takeScreenshot(String pathToFile){
+        File tmp = ((TakesScreenshot) wd).getScreenshotAs(OutputType.FILE);
+//В приведенном выше фрагменте OutputType определяет тип вывода для требуемого снимка экрана.
+        File screenshot = new File(pathToFile);
+        try {
+            Files.copy(tmp,screenshot);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
     }
