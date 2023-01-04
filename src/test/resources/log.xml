@@ -2,15 +2,10 @@
 
 <suite name="Suite1" verbose="1" >
     <test name="First" >
-        <groups>
-            <run>
-                <include name="first"/>
-            </run>
-        </groups>
 
         <classes>
             <class name="tests.LoginTests" />
-            <class name="tests.ChangeAvatarTests" />
+
         </classes>
     </test>
 

@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class LoginTests extends TestBase {
 
-    @BeforeMethod
+    @BeforeMethod (alwaysRun = true)
     public void precondition() {
         if (app.user().isLogged()) {
             app.user().logout();
@@ -15,7 +15,7 @@ public class LoginTests extends TestBase {
 
     }
 
-    @Test
+    @Test(groups = {"first","smoke"})
     public void loginSuccess() {
 
         app.user().initLogin();
@@ -28,10 +28,6 @@ public class LoginTests extends TestBase {
     @Test
     public void loginSuccessModels() {
         User user = new User().withEmail("hatum.testing@gmail.com").withPassword("Hatum21$");
-//        user.setEmail("a");
-//        user.setPassword("b");
-
-
         app.user().initLogin();
         app.user().fillLoginForm(user);
         app.user().submitLogin();

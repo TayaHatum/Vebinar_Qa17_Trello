@@ -3,11 +3,15 @@ package manager;
 import models.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 public class HelperUser extends HelperBase{
     public HelperUser(WebDriver wd) {
@@ -95,5 +99,30 @@ public class HelperUser extends HelperBase{
         wd.switchTo().window(tabs.get(1));
         new WebDriverWait(wd,5)
                 .until(ExpectedConditions.titleIs("Atlassian account"));
+    }
+
+    public void initChangeAvatar() {
+        Actions actions= new Actions(wd);
+        actions.moveToElement(wd.findElement(By.cssSelector("[data-test-selector='profile-hover-info']"))).pause(500).click().release().perform();
+
+        click(By.xpath("//*[text()='Change profile photo']"));
+    }
+
+    public void uploadPhoto(String link) {
+        wd.findElement(By.id("image-input")).sendKeys(link);
+        click(By.xpath("//button/span[text()='Upload']"));
+    }
+
+    public boolean isAvatarAdded() {
+        WebElement until = new WebDriverWait(wd, 7)
+                .until(ExpectedConditions.visibilityOf(wd.findElement(By.xpath("//span[text()='Avatar added']"))));
+        return until.isDisplayed();
+    }
+
+    public void returnToTrelloHome() {
+        List<String > tabs = new ArrayList<>(wd.getWindowHandles());
+        wd.close();
+        wd.switchTo().window(tabs.get(0));
+        click(By.cssSelector("[aria-label='Back to home']"));
     }
 }

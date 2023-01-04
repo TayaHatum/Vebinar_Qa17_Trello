@@ -36,3 +36,20 @@ task qa17(type :Test){
         systemProperty 'browser', "${browser}"
     }
 }
+task qa17new(type :Test) {
+    useTestNG() {
+        def groups = System.getProperty('groups')
+        if(groups != null){
+            includeGroups groups
+        }
+
+        def suite = System.getProperty('suite', '')
+        if (suite.equals('all')) {
+            suites 'src/test/resources/all.xml'
+        } else if (suite.equals('log')) {
+            suites 'src/test/resources/log.xml'
+        } else if (suite.equals('avatar')) {
+            suites 'src/test/resources/avatar.xml'
+        }
+    }
+}
