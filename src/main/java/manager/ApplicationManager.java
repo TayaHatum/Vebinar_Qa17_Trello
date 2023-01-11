@@ -11,6 +11,7 @@ import java.util.concurrent.TimeUnit;
 public class ApplicationManager {
      EventFiringWebDriver wd;
     HelperUser user;
+    HelperBoard board;
     String browser;
 
     public ApplicationManager(String browser) {
@@ -29,6 +30,7 @@ public class ApplicationManager {
         wd.navigate().to("https://trello.com");
         wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         user= new HelperUser(wd);
+        board = new HelperBoard(wd);
 
 
     }
@@ -41,5 +43,7 @@ public class ApplicationManager {
         return user;
     }
 
-
+    public HelperBoard board() {
+        return board;
+    }
 }
