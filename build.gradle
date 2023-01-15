@@ -51,5 +51,9 @@ task qa17new(type :Test) {
         } else if (suite.equals('avatar')) {
             suites 'src/test/resources/avatar.xml'
         }
+
+        if(project.hasProperty('target')){
+            systemProperty 'target',"${target}"
+        }
     }
 }

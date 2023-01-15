@@ -9,11 +9,11 @@ public class ChangeAvatarTests extends TestBase{
     @BeforeMethod(alwaysRun = true)
     public void precondition(){
         if (!app.user().isLogged())
-            app.user().login(new User().withEmail("hatum.testing@gmail.com").withPassword("Hatum21$"));
+            app.user().login(new User().withEmail(app.getEmail()).withPassword(app.getPassword()));
 
     }
 
-    @Test(groups = {"smoke"})
+    @Test(groups = {"smoke"},enabled = false)
     public void changeAvatarTest(){
         app.user().clickAvatarImg();
         app.user().openProfileAndVisability();

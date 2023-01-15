@@ -1,0 +1,37 @@
+19:55:11. INFO  manager.ApplicationManager - Base url is -->https://trello.com
+19:55:13. INFO  manager.MyListener - Start search element by locator --->By.cssSelector: button[data-testid='header-member-menu-button']
+19:55:18. INFO  manager.MyListener - The element with locator --->By.cssSelector: button[data-testid='header-member-menu-button']was found
+19:55:18. INFO  manager.ApplicationManager - I used email -->hatum.testing@gmail.com
+19:55:18. INFO  manager.ApplicationManager - I used password -->Hatum21$
+19:55:20. INFO  manager.MyListener - Start search element by locator --->By.cssSelector: a[href='/login']
+19:55:20. INFO  manager.MyListener - The element with locator --->By.cssSelector: a[href='/login']was found
+19:55:24. INFO  manager.MyListener - Start search element by locator --->By.cssSelector: button.username-change
+19:55:24. INFO  manager.MyListener - The element with locator --->By.cssSelector: button.username-changewas found
+19:55:24. INFO  manager.MyListener - Start search element by locator --->By.name: user
+19:55:24. INFO  manager.MyListener - The element with locator --->By.name: userwas found
+19:55:24. INFO  manager.MyListener - Start search element by locator --->By.id: login
+19:55:24. INFO  manager.MyListener - The element with locator --->By.id: loginwas found
+19:55:26. INFO  manager.MyListener - Start search element by locator --->By.id: password
+19:55:29. INFO  manager.MyListener - The element with locator --->By.id: passwordwas found
+19:55:30. INFO  manager.MyListener - Start search element by locator --->By.id: login-submit
+19:55:30. INFO  manager.MyListener - The element with locator --->By.id: login-submitwas found
+19:55:31. INFO  manager.MyListener - Start search element by locator --->By.cssSelector: button[data-testid='header-member-menu-button']
+19:55:42. INFO  manager.MyListener - The element with locator --->By.cssSelector: button[data-testid='header-member-menu-button']was found
+19:55:42. INFO  manager.MyListener - Start search element by locator --->By.cssSelector: button[data-testid='header-member-menu-button']
+19:55:42. INFO  manager.MyListener - The element with locator --->By.cssSelector: button[data-testid='header-member-menu-button']was found
+19:55:43. INFO  manager.MyListener - Start search element by locator --->By.cssSelector: a[data-testid='account-menu-profile']
+19:55:43. INFO  manager.MyListener - The element with locator --->By.cssSelector: a[data-testid='account-menu-profile']was found
+19:55:43. INFO  manager.MyListener - Start search element by locator --->By.xpath: //a[text()='Atlassian profile']
+19:55:44. INFO  manager.MyListener - The element with locator --->By.xpath: //a[text()='Atlassian profile']was found
+19:55:49. INFO  manager.MyListener - Start search element by locator --->By.cssSelector: [data-test-selector='profile-hover-info']
+19:55:50. INFO  manager.MyListener - The element with locator --->By.cssSelector: [data-test-selector='profile-hover-info']was found
+19:55:51. INFO  manager.MyListener - Start search element by locator --->By.xpath: //*[text()='Change profile photo']
+19:55:51. INFO  manager.MyListener - The element with locator --->By.xpath: //*[text()='Change profile photo']was found
+19:55:51. INFO  manager.MyListener - Start search element by locator --->By.id: image-input
+19:55:51. INFO  manager.MyListener - The element with locator --->By.id: image-inputwas found
+19:55:52. INFO  manager.MyListener - Start search element by locator --->By.xpath: //button/span[text()='Upload']
+19:55:52. INFO  manager.MyListener - The element with locator --->By.xpath: //button/span[text()='Upload']was found
+19:55:53. INFO  manager.MyListener - Start search element by locator --->By.xpath: //span[text()='Avatar added']
+19:55:55. INFO  manager.MyListener - The element with locator --->By.xpath: //span[text()='Avatar added']was found
+19:55:56. INFO  manager.MyListener - Start search element by locator --->By.cssSelector: [aria-label='Back to home']
+19:55:56. INFO  manager.MyListener - The element with locator --->By.cssSelector: [aria-label='Back to home']was found
