@@ -57,7 +57,7 @@ public class HelperUser extends HelperBase{
         click(By.id("login"));
     }
     public boolean isLogged() {
-        pause(2000);
+        pause(3000);
         return isElementPresent(By.cssSelector("button[data-testid='header-member-menu-button']"));
     }
 
