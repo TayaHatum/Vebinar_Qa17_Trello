@@ -1,0 +1,28 @@
+19:25:43. INFO  manager.ApplicationManager - Config file is -->config1
+19:25:54. INFO  manager.ApplicationManager - Base url is -->https://trello.com
+19:25:57. INFO  manager.MyListener - Start search element by locator --->By.cssSelector: button[data-testid='header-member-menu-button']
+19:26:02. INFO  manager.MyListener - The element with locator --->By.cssSelector: button[data-testid='header-member-menu-button']was found
+19:26:04. INFO  manager.MyListener - Start search element by locator --->By.cssSelector: a[href='/login']
+19:26:04. INFO  manager.MyListener - The element with locator --->By.cssSelector: a[href='/login']was found
+19:26:05. INFO  manager.MyListener - Start search element by locator --->By.cssSelector: button.username-change
+19:26:05. INFO  manager.MyListener - The element with locator --->By.cssSelector: button.username-changewas found
+19:26:05. INFO  manager.MyListener - Start search element by locator --->By.name: user
+19:26:05. INFO  manager.MyListener - The element with locator --->By.name: userwas found
+19:26:06. INFO  manager.MyListener - Start search element by locator --->By.id: login
+19:26:06. INFO  manager.MyListener - The element with locator --->By.id: loginwas found
+19:26:08. INFO  manager.MyListener - Start search element by locator --->By.id: password
+19:26:08. INFO  manager.MyListener - The element with locator --->By.id: passwordwas found
+19:26:08. INFO  manager.MyListener - Something went wrong!!!
+19:26:08. INFO  manager.MyListener - Element <input id="password" class="css-wxvfrp" name="password" type="password"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-Taya.local', ip: '192.168.0.102', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 105.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221007134813, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 20.6.0, moz:processID: 29576, moz:profile: /var/folders/s_/hl4vhy0959g..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b6620ca0-4a35-44f1-b5e6-7d9d743ec10b
+19:26:08. INFO  manager.MyListener - org.openqa.selenium.ElementNotInteractableException: Element <input id="password" class="css-wxvfrp" name="password" type="password"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-Taya.local', ip: '192.168.0.102', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 105.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221007134813, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 20.6.0, moz:processID: 29576, moz:profile: /var/folders/s_/hl4vhy0959g..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b6620ca0-4a35-44f1-b5e6-7d9d743ec10b
+19:26:09. INFO  manager.MyListener - Screenshot with throwable -->src/test/screenshots/screenshot-1568.png
