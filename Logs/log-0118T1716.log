@@ -1,0 +1,18 @@
+17:16:32. INFO  manager.ApplicationManager - Config file is -->config1
+17:16:38. INFO  manager.ApplicationManager - Base url is -->https://trello.com
+17:16:41. INFO  manager.MyListener - Start search element by locator --->By.cssSelector: button[data-testid='header-member-menu-button']
+17:16:46. INFO  manager.MyListener - The element with locator --->By.cssSelector: button[data-testid='header-member-menu-button']was found
+17:16:48. INFO  manager.MyListener - Start search element by locator --->By.cssSelector: a[href='/login']
+17:16:48. INFO  manager.MyListener - The element with locator --->By.cssSelector: a[href='/login']was found
+17:16:50. INFO  manager.MyListener - Start search element by locator --->By.cssSelector: button.username-change
+17:16:50. INFO  manager.MyListener - The element with locator --->By.cssSelector: button.username-changewas found
+17:16:50. INFO  manager.MyListener - Start search element by locator --->By.name: user
+17:16:50. INFO  manager.MyListener - The element with locator --->By.name: userwas found
+17:16:51. INFO  manager.MyListener - Start search element by locator --->By.id: login
+17:16:51. INFO  manager.MyListener - The element with locator --->By.id: loginwas found
+17:16:53. INFO  manager.MyListener - Start search element by locator --->By.id: password
+17:16:54. INFO  manager.MyListener - The element with locator --->By.id: passwordwas found
+17:16:54. INFO  manager.MyListener - Start search element by locator --->By.id: login-submit
+17:16:54. INFO  manager.MyListener - The element with locator --->By.id: login-submitwas found
+17:16:57. INFO  manager.MyListener - Start search element by locator --->By.cssSelector: button[data-testid='header-member-menu-button']
+17:17:03. INFO  manager.MyListener - The element with locator --->By.cssSelector: button[data-testid='header-member-menu-button']was found
